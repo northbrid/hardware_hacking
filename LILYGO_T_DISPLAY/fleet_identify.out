@@ -1,0 +1,157 @@
+ls /dev/ | grep cu.usbserial | xargs -I {} esptool -p /dev/{} chip-id
+
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0471931:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Warning: Detected crystal freq 41.01 MHz is quite different to normalized freq 40 MHz. Unsupported crystal in use?
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:0a:6c
+
+Stub flasher running.
+
+Warning: ESP32 has no chip ID. Reading MAC address instead.
+MAC:                08:f9:e0:ce:0a:6c
+
+Hard resetting via RTS pin...
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0476101:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:11:80
+
+Stub flasher running.
+
+Warning: ESP32 has no chip ID. Reading MAC address instead.
+MAC:                08:f9:e0:ce:11:80
+
+Hard resetting via RTS pin...
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0476641:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:12:7c
+
+Stub flasher running.
+
+Warning: ESP32 has no chip ID. Reading MAC address instead.
+MAC:                08:f9:e0:ce:12:7c
+
+Hard resetting via RTS pin...
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0477431:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:13:b0
+
+Stub flasher running.
+
+Warning: ESP32 has no chip ID. Reading MAC address instead.
+MAC:                08:f9:e0:ce:13:b0
+
+Hard resetting via RTS pin...
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0479661:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:17:58
+
+Stub flasher running.
+
+Warning: ESP32 has no chip ID. Reading MAC address instead.
+MAC:                08:f9:e0:ce:17:58
+
+Hard resetting via RTS pin...
+
+ls /dev/ | grep cu.usbserial | xargs -I {} esptool -p /dev/{} flash-id
+
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0471931:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:0a:6c
+
+Stub flasher running.
+
+Flash Memory Information:
+=========================
+Manufacturer: ef
+Device: 4018
+Detected flash size: 16MB
+Flash voltage set by a strapping pin: 3.3V
+
+Hard resetting via RTS pin...
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0476101:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:11:80
+
+Stub flasher running.
+
+Flash Memory Information:
+=========================
+Manufacturer: ef
+Device: 4018
+Detected flash size: 16MB
+Flash voltage set by a strapping pin: 3.3V
+
+Hard resetting via RTS pin...
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0476641:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:12:7c
+
+Stub flasher running.
+
+Flash Memory Information:
+=========================
+Manufacturer: ef
+Device: 4018
+Detected flash size: 16MB
+Flash voltage set by a strapping pin: 3.3V
+
+Hard resetting via RTS pin...
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0477431:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:13:b0
+
+Stub flasher running.
+
+Flash Memory Information:
+=========================
+Manufacturer: ef
+Device: 4018
+Detected flash size: 16MB
+Flash voltage set by a strapping pin: 3.3V
+
+Hard resetting via RTS pin...
+esptool v5.0.2
+Connected to ESP32 on /dev/cu.usbserial-576D0479661:
+Chip type:          ESP32-D0WDQ6-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                08:f9:e0:ce:17:58
+
+Stub flasher running.
+
+Flash Memory Information:
+=========================
+Manufacturer: ef
+Device: 4018
+Detected flash size: 16MB
+Flash voltage set by a strapping pin: 3.3V
+
+Hard resetting via RTS pin...
+
