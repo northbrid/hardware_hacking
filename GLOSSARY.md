@@ -23,6 +23,7 @@ Glossary
 * nRF - Nordic's wireless MCU family
 * nRF52840 - nRF chip available as dongle. Can be used for BLE sniffing.
 * CC2531 - ZigBee controller by Texas Instruments 
+* PCF8574 - A chip that translates between 8-bit parallel and I2C
 
 Some links to the things mentioned above:
 * https://github.com/FreeRTOS
