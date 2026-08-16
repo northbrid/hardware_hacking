@@ -1,6 +1,11 @@
 # MCP DQ7022S
 Two channel digital storage oscilloscope with USB and FFT modules. 
 
+## Origin
+A piece of paper on the Altera chip said JC2022M  
+Based on that, I was able to identify the origin and find user manual.  
+This scope is a re-branded version of Hangzhou Jingce JC2022M
+
 ## Identifiers
 - Mainboard: JC7.820.290V12 070817 07/07/19
 - Inputs board: JC8.720.281V4 2007/08/14
