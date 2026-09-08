@@ -1,7 +1,12 @@
 # Terms
 
+## Software Terms
+
 * `REPL` - Read - Eval - Print Loop.
   * The way of how we can provide interactive shell for a script language
+ 
+## Hardware Terms
+
 * `CSI` - Camera Serial Interface
 * `DSI` - Display Serial Interface
 
