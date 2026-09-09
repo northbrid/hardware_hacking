@@ -1,0 +1,209 @@
+
+Decompressing...done
+
+
+CFE for Foxconn Router VMB4000 version: v1.0.4
+Build Date: Tue Aug  2 15:04:59 CST 2016 
+Init Arena
+Init Devs.
+Boot up from NAND flash...
+Boot partition size = 262144(0x40000)
+NFLASH Boot partition size = 524288(0x80000)
+DDR Clock: 392 MHz
+Info: DDR frequency set from clkfreq=900,*392*
+et0: Broadcom BCM47XX 10/100/1000 Mbps Ethernet Controller 9.10.178.4002 (r623328)
+CPU type 0x0: 900MHz
+Tot mem: 131072 KBytes
+
+Device eth0:  hwaddr CC-40-D0-83-9D-C0, ipaddr 192.168.1.1, mask 255.255.255.0
+        gateway not set, nameserver not set
+img_boot=1
+
+trx_failed=0 at <nflash1.trx2>
+Got the Linux image 1
+Loader:raw Filesys:raw Dev:nflash0.os2 File: Options:(null)
+Loading: ..... 5521120 bytes read
+Entry at 0x00008000
+Closing network.
+Starting program at 0x00008000
+console [ttyS0] enabled, bootconsole disabled
+brd: module loaded
+loop: module loaded
+pflash: found no supported devices
+ERROR: Unknown flash, device_id:0x00
+bcmsflash: found no supported devices
+The first offset=200000, 2nd offset=2e00000
+Boot partition size = 524288(0x80000)
+lookup_nflash_rootfs_offset: offset = 0x200000
+nflash: squash filesystem with lzma found at block 33
+lookup_nflash_rootfs_offset: offset = 0x2e00000
+nflash: squash filesystem with lzma found at block 385
+Creating 11 MTD partitions on "nflash":
+0x000000000000-0x000000080000 : "boot"
+0x000000080000-0x000000200000 : "nvram"
+0x000000200000-0x000002e00000 : "linux"
+0x0000004360e4-0x000002e00000 : "rootfs"
+0x000002e00000-0x000005a00000 : "linux2"
+0x0000030360e0-0x000005a00000 : "rootfs2"
+0x000005a00000-0x000005b80000 : "nvram2"
+0x000005b80000-0x000005bc0000 : "board_data"
+0x000005bc0000-0x000005c00000 : "board_data2"
+0x000005c00000-0x000005c40000 : "POT1"
+0x000005c40000-0x000005c80000 : "POT2"
+PPP generic driver version 2.4.2
+NET: Registered protocol family 24
+usbmon: debugfs is not available
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd 0000:00:04.1: EHCI Host Controller
+ehci_hcd 0000:00:04.1: new USB bus registered, assigned bus number 1
+ehci_hcd 0000:00:04.1: irq 36, io mem 0x18004000
+ehci_hcd 0000:00:04.1: USB 0.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci_hcd 0000:00:04.0: OHCI Host Controller
+ohci_hcd 0000:00:04.0: new USB bus registered, assigned bus number 2
+ohci_hcd 0000:00:04.0: irq 36, io mem 0x1800d000
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+u32 classifier
+    Actions configured
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (1941 buckets, 7764 max)
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+TCP vegas registered
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+Northstar brcmnand NAND Flash Controller driver, Version 0.1 (c) Broadcom Inc. 2012
+NAND device: Manufacturer ID: 0xef, Chip ID: 0xf1 (Unknown NAND 128MiB 3,3V 8-bit)
+Spare area=64 eccbytes 28, ecc bytes located at:
+ 9 10 11 12 13 14 15 25 26 27 28 29 30 31 41 42 43 44 45 46 47 57 58 59 60 61 62 63
+Available 35 bytes at (off,len):
+(1,8) (16,9) (32,9) (48,9) (0,0) (0,0) (0,0) (0,0) 
+Scanning device for bad blocks
+usb 1-1: new high speed USB device using ehci_hcd and address 2
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 4 ports detected
+Options: NO_AUTOINCR,NO_READRDY,
+Creating 1 MTD partitions on "brcmnand":
+0x000005c80000-0x000007c80000 : "brcmnand"
+VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+devtmpfs: mounted
+Freeing init memory: 236K
+/sbin/hotplug2: No such file or directory
+Reading board data...
+WSC UUID: 0x98264471c33495a0317d5a6d8b2a3fdd
+wl: wl driver adapter not found
+NTP synchronized date/time: Fri Jun 26 15:06:30 2020
+MAC address of 1st STA connected: 00-00-00-00-00-00
+wl: wl driver adapter not found
+convert_wlan_params_for_all_bssid 1131 lan_ifnames: vlan1 eth1
+insmod: module 'ipv6' not found
+insmod: module 'bcm57xx' not found
+**** lm48560_restore_setting ****
+frequency	=0x3F
+gain	=0x0
+Hit enter to continue...WARNING: console log level set to 1
+wps_aplockdown_init(90):WPS aplockdown init: force_on = 1, start_cnt = 3, forever_cnt = 3!
+
+### wps_wfi_init(): <wl0_wfi_enable=(null)>WFI is not enabled ###
+wps_set_beacon_IE(515):set beacon IE on eth1 successful, selreg is FALSE
+wps_set_prb_rsp_IE(339):set probrsp IE on eth1 successful, selreg is FALSE
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+
+sending "{ "action":"apLost" }", size=22
+Can't connect to '127.0.0.1':4006, errno=111 - Connection refused.
+acsd: Adjusted channel spec: 0x1003
+acsd: selected channel spec: 0x1003
+Reading board data...
+WSC UUID: 0x98264471c33495a0317d5a6d8b2a3fdd
+rmmod: remove 'br_dns_hijack': No such file or directory
+insmod: module 'br_dns_hijack' not found
+telnetenabled: No such file or directory
+eth2: cmd=162: No such device
+Status change. Link Down 
+killall: udhcpc: no process killed
+Release udhcpc 
+eth0: No such process
+lld2d: No such file or directory
+POT integrity check OK.
+POT time is up.
+Can't open device file: /dev/acos_nat_cli
+Start DHCP client daemon
+udhcpc: started, v1.34.1
+eth0: No such process
+vuezone startupkillall: dnsmasq: no process killed
+udhcpc: create_sockets_for_read_dhcp_mac read_dhcp_mac_thread created, tid=721081552
+udhcpc: broadcasting discover
+date: invalid date '050100002019'
+Could not find IP for Eth0 error = 99
+udhcpc: broadcasting discover
+Checking Existence of config files
+udhcpc: broadcasting discover
+pclose(pipe) in exec_ext_app(burnsn 2>&1).
+killall: dropbear: no process killed
+Could not find IP for Eth0 error = 99
+udhcpc: 1 dhcp_mac add (127.0.0.1->00:00:00:00:00:00)
+udhcpc: 1 Source,Dest ports 59910,4002
+udhcpc: 1 Layer-4 protocol 6
+
+    LogLevel                  = INFO
+    BackendUrl                = https://deviceapi.messaging.arlo.com
+    CameraInputIx             = eth1
+    CameraInputPort           = 4000
+    DoorbellInputPort         = 4100
+    PresenceIx                = lo
+    PresenceDataPort          = 4001
+    PresenceStatusPort        = 4002
+    HttpServerPort            = 80
+    UpdateUrl                 = https://updates.arlo.com/arlo/fw/fw_deployed/production
+    MetricUrl                 = 
+    SerialNum                 = 4RD3877HA068D
+    ConfigPath                = /tmp/media/nand/vzdaemon/conf
+    WatchdogPid               = 573
+    HwRevision                = 3
+    ModelId                   = VMB4000
+    CertPath                  = /certs/ca-bundle-arlo.crt
+    MediaServerCertPath       = /certs/wowza.netgear.com_Certificate_Only.pem
+    RtspPort                  = -1
+    AcsdStatusPort            = 4006
+    -- version --             = 1.29.1.0_4750_7ee40c0
+    -- platform --            = VMB4000
+
+23:00:19.143 os_core_unix.c !pjlib 2.14.1 for POSIX initialized
+23:00:19.267 sip_endpoint.c  .Creating endpoint instance...
+23:00:19.269      ioq_epoll  .epoll EXCLUSIVE/ONESHOT support disabled, reason: problem with OpenSSL ver <= 1.0.2
+23:00:19.270          pjlib  .epoll I/O Queue created (flags:0x0, ptr=0x5608dc90)
+23:00:19.270 sip_endpoint.c  .Module "mod-msg-print" registered
+23:00:19.270 sip_transport.  .Transport manager created.
+23:00:19.270   pjsua_core.c  .PJSUA state changed: NULL --> CREATED
+/bin/sh: iptables: not found
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
