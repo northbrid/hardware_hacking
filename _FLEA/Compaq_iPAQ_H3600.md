@@ -65,7 +65,36 @@ This is exactly the identifier of the iPAQ PocketPC, so we are good!
 
 Now we need a software for it. 
 
+#### USB Connection Troubleshooting
 
+When I connect my PocketPC to Windows 10 and it receives the power and data in the same cable, 
+I get `Device Descriptor Request Failed` error, I guess because it tries to communicate with it too early. 
+Windows does not have the option to re-request the device descriptor, but restarting the OS helps. 
+It also helps if I provide power for the device from another source, so it's already running when I plug it in. 
 
+#### Sync Software
 
+WMDC (Windows Mobile Device Center) is the thing I need, and it can be downloaded from here:  
+https://www.microsoft.com/en-us/download/details.aspx?id=15&msockid=1810030c5719682c173c125e56df698d
+
+I also had to find drivers, and Microsoft stopped serving them, so I had to use Wayback Machine to get them:
+https://web.archive.org/web/20200803205229if_/https://download.microsoft.com/download/0/4/3/0432540e-2d1a-415d-9c9d-a9963e43503e/drvupdate-amd64.exe
+
+WMDC installed successfully and appeared in my start menu, but it did not work. I had to find workaround. Found this: 
+- https://junipersys.com/support/article/12162
+- https://harvestmaster.com/data/support/WMDC-fixes-for-Win10.msi
+
+After installing the patch, the WMDC starts up, but it does not detect my already connected device. 
+Turned out that it only works properly if I connect the device after the WMDC already running.
+Together with the USB connection problem mentioned above, it means that a secondary power source is NECESSARY. 
+
+After the connection works, it integrates with my Windows 10 in a surprisingly streamlined way. 
+I can even run windows CE app installer on my computer, and it will install the software itself to the PDA. 
+
+#### Software for the PocketPC
+
+- https://ppcplanet.org/archive
+  - SimCity 2000 works!
+ 
+  - 
   
