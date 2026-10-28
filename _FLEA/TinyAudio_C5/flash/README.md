@@ -7,7 +7,7 @@ I also uploaded the 1Mb dump here as `W25Q80JVS.bin`
 # Analysis
 
 Running a `binwalk` does not find anything useful, and the entropy is interesting but not very revealing.
-![Entropy](flash/entropy.png)
+![Entropy](./entropy.png)
 
 ## Finding pictures
 
