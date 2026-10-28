@@ -1,0 +1,4 @@
+- This EEPROM is located on the bluetooth daughterboard. 
+- My guess is that it contains a very deep-level firmware. 
+- Contains one interesting string in 8-bit format: `CAR DAB`
+  - This is exactly how the device appears in the list of bluetooth devices

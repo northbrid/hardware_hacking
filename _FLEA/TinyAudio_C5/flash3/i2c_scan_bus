@@ -1,0 +1,7 @@
+#!python3
+
+from ch347py.ch347 import CH347
+
+d = CH347()
+d.open_device()
+print(d.scan_i2c())

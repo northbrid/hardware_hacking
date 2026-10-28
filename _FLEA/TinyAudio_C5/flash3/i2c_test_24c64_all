@@ -1,0 +1,8 @@
+#!python3
+
+from ch347py.i2c_devices.eeprom24 import EEPROM24
+
+eeprom = EEPROM24(address=0x50, chip="24C64")
+
+for i in range(128):
+	print(eeprom.dump(i*64, 64))

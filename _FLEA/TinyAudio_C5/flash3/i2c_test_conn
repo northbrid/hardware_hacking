@@ -1,0 +1,5 @@
+#!python3
+
+from ch347py.ch347 import CH347
+
+CH347().list_devices()

@@ -1,0 +1,12 @@
+#!python3
+
+from ch347py.i2c_devices.eeprom24 import EEPROM24
+
+eeprom = EEPROM24(address=0x50, chip="24C64")
+
+with open("eeprom_24c64.bin", "wb") as f:
+    for i in range(128):
+        f.write(eeprom.read(i*64, 64))
+
+eeprom.close()
+print("Wrote 8192 bytes to eeprom_24c64.bin")
