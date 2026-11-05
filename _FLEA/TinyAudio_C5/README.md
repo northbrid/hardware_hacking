@@ -58,17 +58,20 @@ I suspect STM32F030, so I will also look at the function of the same PIN of that
 
 | pin | function | STM32F030 | match? | 
 |-----|----------|-----------|--------|
-| 12 | `GND` | `VSSA` | [x] |
-| 31 | `GND` | `VSS` | [x] |
-| 63` | `GND` | `VSS` | [x] |
+| 12 | `GND` | `VSSA` | OK |
+| 31 | `GND` | `VSS` | OK |
+| 63` | `GND` | `VSS` | OK |
 
 #### SPI flash connections
 
+WP is pulled up hardwired, so the flash is writeable. 
+
 | pin | function | STM32F030 | match? |
 |-----|----------|-----------|--------|
-| 20 | `MOSI` | `PA4` (`SPI1_NSS`) | ? | 
-| 21 | `MISO` | `PA5` (`SPI1_SCK`) | ? | 
-| 22 | `SCLK` | `PA6` (`SPI1_MISO`) | ? | 
+| 20 | `CS` | `PA4` (`SPI1_NSS`) | OK | 
+| 21 | `SCLK` | `PA5` (`SPI1_SCK`) | OK | 
+| 22 | `MISO` | `PA6` (`SPI1_MISO`) | OK | 
+| 23 | `MOSI` | `PA6` (`SPI1_MOSI`) | OK | 
 
 #### Bluetooth module connections
 
@@ -77,26 +80,32 @@ LED1 and LED2 pins of module are pulled up.
 
 | pin | function | STM32F030 | match? |
 |-----|----------|-----------|--------|
-| 50 | `UP` | `PA15` | ? |
-| 51 | `PIO2` | `PC10` | ? |
-| 52 | `POW` | `PC11` | ? | 
-| 53 | `DOWN` | `PC12` | ? | 
+| 51 | `UP` | `PC10` | OK |
+| 52 | `PIO2` | `PC11` (`RX`) | OK |
+| 53 | `POW` | `PC12` | OK | 
+| 54 | `DOWN` | `PD2` | ? |
+
+The main CPU is probably controlling the BT module  
+by reading its state through an UART input,  
+and controlling with Up, Down and Pow keys. 
 
 #### SWD header connections 
 
 | pin | function | STM32F030 | match? |
 |-----|----------|-----------|--------|
-| 6? 7? | `RST` | `NRST` | ? |
-| 46 | `DAT` | `PA13` (`SWDIO`) | [x] |
-| 49 | `CLK` | `PA14` (`SWCLK`) | [x] |
+| 7 | `RST` | `NRST` | OK |
+| 46 | `DAT` | `PA13` (`SWDIO`) | OK |
+| 49 | `CLK` | `PA14` (`SWCLK`) | OK |
 
 #### TP connections
+
+TEST can either receive data, as that pin has RX function.  
+Or, it can be a binary flag that enables something.  
+It only depends on how the software configures the CPU. 
 
 | pin | function | STM32F030 | match? |
 |-----|----------|-----------|--------|
 | 50 | `TEST` | `PA15` (`RX`) | ? | 
-| 49 | `D+` | `PA14` (`SWCLK`) | ? | 
-
 
 ## BT Daughterboard
 
